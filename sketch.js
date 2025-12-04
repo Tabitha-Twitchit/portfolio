@@ -5,7 +5,8 @@ class Walker{
     this.y = height / 2;
   }
   show(){
-    stroke(0);
+    stroke('blue');
+    strokeWeight(5);
     point(this.x, this.y);  
   }
   step(){

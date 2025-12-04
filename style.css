@@ -4,15 +4,54 @@ html, body {
   height: 100%;
 }
 
+.scrolling-text-container{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  color: yellow;
+  background-color: dimgray;
+}
+.scrolling-text{
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left{
+  0% {
+    transform: translateX(350%) ;
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+nav iframe{
+  height: 100%;
+  background-image: url("images/Nav_Backg.png");
+  
+  /* background-color: blueviolet; */
+}
+
 canvas {
   display: block;
   pointer-events: none;
 }
 
+.main{
+  display: flex;
+}
+
 .foreground{
-  position: relative;
-  z-index: 1;
-  color: black;
-  padding: 2rem;
+  background-color: aquamarine;
+  flex-grow: 1;
+  /* position: relative; */
+  /* width: 1000px; */
+  /* z-index: 1; */
+  /* color: black; */
+  /* padding: 2rem; */
   /* opacity: 0.5; */
+}
+.foreground img{
+  width: 100%;
 }
