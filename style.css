@@ -42,6 +42,10 @@ canvas {
   display: flex;
 }
 
+.main iframe{
+  width: 100%;
+}
+
 .foreground{
   background-color: aquamarine;
   flex-grow: 1;
