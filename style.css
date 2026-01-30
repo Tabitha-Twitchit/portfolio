@@ -1,10 +1,17 @@
 /* #region Overall */
+@font-face {
+  font-family: adelphi;
+  src: url(fonts/ADELP___.TTF);
+}
+
 html,
 body {
+  font-family: adelphi;
   margin: 0;
   padding: 0;
   height: 100%;
 }
+
 
 canvas {
   display: block;
@@ -35,10 +42,6 @@ canvas {
 }
 /* #endregion ScrollText */
 
-iframe {
-  overflow: scroll;
-}
-
 .main {
   display: flex;
 }
@@ -48,35 +51,31 @@ nav {
 }
 
 nav iframe {
-  height: 100%;
+  height: 99%; /*100% overflows for some reason*/
   z-index: 6;
-  /* overflow: scroll; */
   /* width: 20vh; */
   background-image: url("images/Nav_Backg.png");
-  /* background-color: blueviolet; */
 }
 
 .foreground {
-  /* background-color: aquamarine; */
-  /* flex-grow: 1; */
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   width: 90vw;
-  /* z-index: 1; */
-  /* color: black; */
-  /* padding: 2rem; */
-  /* opacity: 0.5; */
 }
 .foreground img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-
 .foreground iframe {
   height: 50vh;
   width: 100%;
 }
-/* Be Mindful if you just paset a new sheet in you will need to relink this sheet to unify stylinga*/
+.foreground p{
+  padding-left: 2%;
+}
+/* Consider making some container types for images, video, text, etc, so you can standardize their display */
 
+/* Be Mindful if you just paset a new sheet in you will need to relink this sheet to unify stylinga*/
 /* Table stuff */
 /*#region Table*/
 table,
@@ -99,10 +98,6 @@ td {
 #orbit-container {
   height: 100%;
   overflow: hidden;
-}
-
-.orbited {
-  /* position: absolute; */
 }
 
 .orbiter {
