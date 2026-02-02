@@ -11,7 +11,9 @@ body {
   padding: 0;
   height: 100%;
 }
-
+a:hover{
+  background-color: yellow;
+}
 
 canvas {
   display: block;
@@ -50,7 +52,7 @@ nav {
   z-index: 5;
 }
 
-nav iframe {
+nav iframe{
   height: 99%; /*100% overflows for some reason*/
   z-index: 6;
   /* width: 20vh; */
