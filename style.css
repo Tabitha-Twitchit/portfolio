@@ -75,6 +75,10 @@ nav iframe{
 .foreground p{
   padding-left: 2%;
 }
+
+.centered{
+  text-align: center;
+}
 /* Consider making some container types for images, video, text, etc, so you can standardize their display */
 
 /* Be Mindful if you just paset a new sheet in you will need to relink this sheet to unify stylinga*/
