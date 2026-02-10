@@ -59,6 +59,10 @@ nav iframe{
   background-image: url("images/Nav_Backg.png");
 }
 
+ .nav-list li{
+  margin-bottom: 5px;
+}
+
 .foreground {
   display: flex;
   flex-direction: column;
