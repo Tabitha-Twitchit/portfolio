@@ -101,8 +101,8 @@ td {
 
 /*#region Misc*/
 .space{
-  background-color: black;
-  overflow: hidden;
+  /* background-color: black;
+  overflow: hidden; */
 }
 
 #orbit-container {
