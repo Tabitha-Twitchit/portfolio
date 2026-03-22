@@ -101,8 +101,8 @@ td {
 
 /*#region Misc*/
 .space{
-  /* background-color: black;
-  overflow: hidden; */
+  background-color: black;
+  /* overflow: hidden; */
 }
 
 #orbit-container {
@@ -117,6 +117,12 @@ td {
   z-index: 1;
   animation: ease-in orbit 10s infinite;
 }
+.orbited{
+  position: absolute;
+  top: 10%;
+  z-index: 0;
+}
+
 
 @keyframes orbit {
   0% {
@@ -130,7 +136,7 @@ td {
   25% {
     transform: translate(250%) scale(2);
     animation-timing-function: ease-out;
-    z-index: 1;
+    z-index: 10;
   }
 
   37.5% {
@@ -139,7 +145,7 @@ td {
 
   50% {
     transform: translateX(500%);
-    z-index: 1;
+    z-index: 5;
     animation-timing-function: ease-in;
   }
 
@@ -164,5 +170,12 @@ td {
   100% {
     z-index: -1;
   }
-  /*#endregion Misc*/
+
 }
+
+#vidcontainer{
+position: absolute;  
+top: 21%;
+z-index: 4;
+}
+/*#endregion Misc*/
